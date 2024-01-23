@@ -1,7 +1,15 @@
+import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
+
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
+      <Header />
+      <main>
+        <div className="container grid lg:grid-cols-[218px_1fr] gap-[3.5rem]">
+          <Sidebar />
+        </div>
+      </main>
     </>
   );
 }
